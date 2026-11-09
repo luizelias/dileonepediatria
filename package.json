@@ -1,0 +1,15 @@
+{
+  "name": "dileone-pediatria",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site estático da Dra. Ornella Di Leone para GitHub Pages",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/server.mjs",
+    "preview": "node scripts/server.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/build.mjs && node scripts/check.mjs"
+  }
+}

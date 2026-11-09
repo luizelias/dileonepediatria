@@ -1,0 +1,44 @@
+[
+  {
+    "id": 5,
+    "name": "Alimentação",
+    "slug": "alimentacao",
+    "count": 3
+  },
+  {
+    "id": 18,
+    "name": "Desenvolvimento neuropsicomotor",
+    "slug": "desenvolvimento-neuropsicomotor",
+    "count": 2
+  },
+  {
+    "id": 6,
+    "name": "Medicina Preventiva",
+    "slug": "medicina-preventiva",
+    "count": 4
+  },
+  {
+    "id": 7,
+    "name": "O que fazer",
+    "slug": "o-que-fazer",
+    "count": 3
+  },
+  {
+    "id": 22,
+    "name": "Sinai de alarme",
+    "slug": "sinai-de-alarme",
+    "count": 0
+  },
+  {
+    "id": 23,
+    "name": "Sinais de alarme",
+    "slug": "sinais-de-alarme",
+    "count": 5
+  },
+  {
+    "id": 1,
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "count": 1
+  }
+]

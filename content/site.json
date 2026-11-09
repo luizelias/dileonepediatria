@@ -1,0 +1,105 @@
+{
+  "title": "Calma, mãe!",
+  "intro": "Estou aqui para te ajudar neste universo da maternidade, contribuindo para que ela seja mais leve.",
+  "heroChecks": [
+    "Acompanhamento para um <strong>crescimento saudável,</strong> com foco importante na <strong>prevenção</strong>",
+    "Pediatria baseada em <strong>evidência científica</strong>",
+    "Atendimento <strong>humanizado</strong>, com <strong>espaço de escuta</strong> e <strong>acolhimento</strong>"
+  ],
+  "philosophyTitle": "Toda leoa sabe a hora de rugir.",
+  "philosophy": "\n<p>Vamos apreciar juntas cada conquista do seu pequeno. Meu objetivo é <strong>prevenir doenças futuras</strong>, te ensinando <strong>jeitos mais saudáveis de viver</strong> – sempre baseado em evidência científica.</p>\n<p>Buscarei te ensinar a <strong>identificar os sinais de alerta</strong> das principais patologias pediátricas e como agir, para que possas se <strong>sentir mais autoconfiante e segura</strong> nas tomadas de decisões.</p>\n<p>Vou procurar entender melhor as <strong>demandas do seu filho</strong> através de <strong>escuta</strong>, <strong>acolhimento</strong> e <strong>olho no olho</strong>, e vou gostar muito de conhecer os principais cuidadores e saber como é o espaço onde a sua criança vive. <strong>Vamos juntas!</strong></p>\n",
+  "benefitsTitle": "Benefícios que vão muito além do consultório:",
+  "benefits": [
+    "Identificar <strong>sinais de alerta</strong> antes que se tornem distúrbios já instalados",
+    "Identificar esses distúrbios de forma <strong>precoce</strong>",
+    "Acompanhar<strong> cada fase do desenvolvimento</strong> com olhar atento",
+    "Evitar <strong>medicalização desnecessária</strong>",
+    "Auxiliar na construção da <strong>mãe leoa resolutiva</strong>"
+  ],
+  "benefitsEnd": "\n<p>Crescer saudável não é só um direito. É uma <strong>arte que construímos juntos</strong>, todos os dias.</p>\n",
+  "servicesTitle": "Serviços Oferecidos:",
+  "servicesIntro": "\n<p>Acompanhamento de <strong>rotina da criança e do adolescente</strong> (<em>puericultura</em>) – do recém nascido ao adolescente. Avaliação integral da <strong>saúde física e mental</strong> e do contexto sociocultural na qual o indivíduo está inserido.</p>\n",
+  "about": "\n<p>Antes de me apaixonar pela pediatria, eu me interessei pelas neurociências, participando de pesquisas acadêmicas na área de envelhecimento e cérebro. Me encantei primeiro pelos idosos, e, ao final da faculdade, pelas crianças. Hoje, como pediatra, penso muito sobre esta <strong>transformação da criança num ser adulto</strong>. Sendo assim, é fundamental que se busque a <strong>prevenção</strong> para obter maior <strong>qualidade de vida a longo prazo</strong>.</p>\n<p><strong>Sabemos que muitos pais só procuram o pediatra quando algo não vai bem. Mas e se pudéssemos inverter essa lógica?</strong></p>\n",
+  "education": "\n<p>Realizei residência médica em pediatria no período de março de 2019 a fevereiro de 2022 no <strong>Hospital da Criança Santo Antônio – Santa Casa de Misericórdia de Porto Alegre</strong>. Terminei a graduação em Medicina pela <strong>Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)</strong> em 2018. Fiz parte do <strong>Grupo de Pesquisa Envelhecimento e Saúde Mental (GPESM)</strong>, do <strong>Instituto de Geriatria e Gerontologia da PUCRS</strong> durante a graduação e fui bolsista do CNPq, desenvolvendo o projeto <strong>Traumas infantis em idosos: consequência tardias</strong> em uma amostra de idosos do sistema único de saúde. Também fui bolsista na área de <strong>Saúde Coletiva, do Projeto PET-Redes de Atenção à Saúde Indígena</strong>. Recebi 2 prêmios de primeiro lugar na Sessão de pôsteres <strong>Norton Marc das Jornadas de Psiquiatrias realizadas pelo CENESPI</strong>, nos anos de 2016 e 2018.</p>\n",
+  "events": [
+    "41º Congresso Brasileiro de Pediatria da SBP em 2024",
+    "31º Curso Teórico-Prático de Pneumologia Pediátrica da Santa Casa de Porto Alegre, 2024",
+    "PALS – Suporte Avançado de Vida em Pediatria, 2024",
+    "Curso de Obesidade na infância e adolescência: como conduzir? da SBP 2022",
+    "14º Congresso Brasileiro Pediátrico de Endocrinologia e Metabologia – COBRAPEM, 2021",
+    "XIII Congresso Gaúcho de Atualização em Pediatria, 2021",
+    "Capacitação em Protocolos de Manejo Clínico do Coronavirus (COVID-19). 2020",
+    "39º Congresso Brasileiro de Pediatria. 2019",
+    "Curso Básico de Reanimação Neonatal da SBP. 2019"
+  ],
+  "services": [
+    {
+      "title": "Consulta de Queixas Agudas",
+      "body": "<p>avaliação e manejo de febre, infecções agudas, dores agudas, entre outros.</p>",
+      "icon": "assets/icons/service-1.svg"
+    },
+    {
+      "title": "Consulta pediátrica pré-natal (gestante)",
+      "body": "<p>Orientações importantes sobre os primeiros cuidados com o bebê.</p>",
+      "icon": "assets/icons/service-2.svg"
+    },
+    {
+      "title": "Acompanhamento de rotina da criança e do adolescente (puericultura)",
+      "body": "<p>Do recém nascido ao adolescente. Avaliação integral da saúde física e mental e do contexto sociocultural na qual o indivíduo está inserido</p>",
+      "icon": "assets/icons/service-3.svg"
+    },
+    {
+      "title": "Teleconsulta",
+      "body": "<p>Atendimento online para tirar dúvidas e garantir suporte ágil.</p>\n<p>Para agendar sua tele consulta, entre em contato por email <a href=\"mailto:ornella.dileone@gmail.com\"><strong>clicando aqui</strong></a>.</p>",
+      "icon": "assets/icons/service-4.svg"
+    }
+  ],
+  "testimonials": [
+    {
+      "body": "Desde o primeiro atendimento, nos sentimos acolhidos pela Dra Ornella.<br/>\nDe um médico pediatra, não esperamos somente competência técnica, mas também carinho e empatia com as crianças. Nos sentimos muito seguros com todo suporte e direcionamento, em anos nunca tinha encontrado uma médica tão boa. Hoje temos 2 filhas e fazemos questão de absolutamente tudo ser regido por ela, muito obrigado por tudo. ",
+      "name": "Isabela",
+      "role": "Mãe da Maria Clara e da Maria Cecília"
+    },
+    {
+      "body": "Encontrar a Dra. Ornella foi um grande presente pra gente! Desde a gestação eu desejei uma pediatra aberta ao diálogo e que respeitasse nossas escolhas familiares nos orientando sempre que necessário. O Liam já tinha passado por alguns pediatras quando tivemos a sorte desse encontro. É uma pediatra acolhedora e carinhosa, que dá espaço para as infinitas dúvidas e que realmente se importa conosco enquanto família. Uma profissional ímpar, dedicada e indispensável no desenvolvimento do nosso pequeno! Somos muito felizes por tê-la nos acompanhando e nos orientando. ",
+      "name": "Caroline",
+      "role": "Mãe do Liam"
+    },
+    {
+      "body": "Gostaria de agradecer a essa médica maravilhosa Dra Ornella Di Leone, que com sua orientação e seus cuidados não mediu esforços para nos orientar e nos acolher nos momentos mais difíceis de crises respiratória do Theo, e foram muitas. Por muitas vezes foi, além da medicina, e pude conhecer seu lado humano e acolhedor, e como mãe pude ter segurança para lidar com uma criança doente nos momentos mais desafiadores.<br/>\nHoje Theo com 3 anos e diagnosticado com autismo, não faz mais uso de bombinha, frequenta creche diariamente e faz um ano que não tem mais crise respiratória. Theo vive. Gratidão Dra por todo atendimento prestado. ",
+      "name": "Rosineide",
+      "role": "Mãe do Theo"
+    },
+    {
+      "body": "Queria expressar aqui toda minha gratidão em ter conhecido dra Ornella, essa profissional, esse ser humano tão especial. Ela é extremamente competente, cuida das minhas filhas com todo amor e carinho, ela é paciente, não tem preocupação só com o que nos fez chegar até o consultório, mas também em como as meninas estão se sentindo, como nós pais estamos , como está a rotina da família. Ela é aquela médica HUMANA. Tenho só gratidão a Deus por ter colocado ela no nosso caminho, porque é muito confortante saber que tenho uma Pediatra competente que cuida dos meus bens mais preciosos desde sempre, então, tudo que eu falar aqui ainda é pouco pra expressar a alegria e carinho que tenho pela Dra Ornella. ",
+      "name": "Milena",
+      "role": "Mãe da Lara e da Lua"
+    },
+    {
+      "body": "Conheci a Dra. Ornella em uma consulta de emergência em que levei meu filho Lucas em 2022 e já nesse primeiro contato pude perceber sua dedicação e cuidado com os pacientes. Desde então, Lucas é atendido regularmente pela Dra. Ornella, que ao longo dos anos sempre foi disponível e acolhedora, cuidando do meu filho com muita competência e carinho. ",
+      "name": "Juliana",
+      "role": "Mãe do Lucas"
+    },
+    {
+      "body": "Desde a primeira consulta, me sinto acolhida e segura. A maneira como a Dra. Ornella trata minhas filhas com tanto cuidado, paciência e atenção faz toda a diferença. Ela demonstra se preocupar realmente com a saúde das meninas. Sempre recebemos orientações claras, sem pressa e com muito carinho. É reconfortante saber que posso contar com uma pediatra que realmente se importa com o bem-estar das crianças e que está sempre disponível para tirar dúvidas e orientar. A confiança que tenho é enorme, e saber que minhas filhas estão em boas mãos não tem preço. ",
+      "name": "Jéssica",
+      "role": "Mãe da Isis e da Olívia"
+    }
+  ],
+  "appointments": [
+    {
+      "label": "Agende sua Consulta - Clinica Trompowsky",
+      "url": "https://wa.me/554891548464?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20consulta%20com%20a%20Dra.%20Ornella%20Di%20Leone"
+    }
+  ],
+  "heroImage": "assets/images/bg-hero-png.png",
+  "benefitsImage": "assets/images/leandrorodrigues-0320-scaled.webp",
+  "aboutImage": "assets/images/WhatsApp-Image-2025-03-19-at-08.27.10.webp",
+  "logo": "assets/images/estudo-05-03.svg",
+  "footerLogo": "assets/images/estudo-05-03-1-png.webp",
+  "favicon": "assets/images/estudo-05-02-100x100.png",
+  "shareImage": "assets/images/destaque-png.webp",
+  "aboutEducation": "\n<p>Realizei residência médica em pediatria no período de março de 2019 a fevereiro de 2022 no<strong> Hospital da Criança Santo Antônio – Santa Casa de Misericórdia de Porto Alegre</strong>.  Terminei a graduação em Medicina pela <strong>Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)</strong> em 2018. Fiz parte do <strong>Grupo de Pesquisa Envelhecimento e Saúde Mental (GPESM)</strong>, do Instituto de Geriatria e Gerontologia da PUCRS durante a graduação e fui <strong>bolsista do CNPq</strong>, desenvolvendo o projeto <strong>Traumas infantis em idosos: consequência tardias em uma amostra de idosos do sistema único de saúde.</strong> Também fui bolsista na área de Saúde Coletiva, do Projeto <strong>PET-Redes de Atenção à Saúde Indígena</strong>. Recebi 2 prêmios de primeiro lugar na Sessão de pôsteres <strong>Norton Marc das Jornadas de Psiquiatrias realizadas pelo CENESPI</strong>, nos anos de 2016 e 2018. </p>\n",
+  "eventsImage": "assets/images/leandrorodrigues-9967-scaled.webp",
+  "information": "\n<p><strong>Consulta Domiciliar.</strong></p>\n<p>Aqui vão as principais informações sobre o atendimento domiciliar:<br/><br/>É um atendimento muito diferenciado, que traz diversas vantagens, uma vez que a criança não sai do seu ambiente seguro. Eu vou até vocês! Evita trânsito e demais perrengues que envolvem sair de casa com uma criança.</p>\n<ul>\n<li>Meu atendimento vai desde recém nascidos a adolescentes</li>\n<li>Dois tipos de atendimentos: puericultura (acompanhamento de rotina) e demanda aguda leve (alguma queixa pontual que possa ser resolvida numa consulta em casa – como dor de ouvido, dor de garganta, etc). Se for algo mais grave, que necessite de muitos exames ou medicação, aí o indicado é procurar um pronto atendimento.</li>\n<li>Tempo médio da consulta domiciliar é de 1h30min por paciente</li>\n<li>As consultas são particulares, se for necessário fazer algum exame de rotina, este poderá ser feito pelo seu convênio </li>\n<li>Por se tratar de um atendimento diferenciado, com deslocamento e tempo reservado exclusivamente para aquela família, não há consulta de retorno presencial. Caso seja necessária uma nova avaliação presencial, ela é agendada como uma nova consulta.</li>\n<li>Se na consulta domiciliar for solicitado algum exame, eu verei os exames através do whatsapp – de acordo com as regras de uso do mesmo</li>\n</ul>\n<p><strong>Se você gostou deste formato de consulta e quiser saber sobre agendamento e valores, só me chamar aqui no meu Instagram <a href=\"https://www.instagram.com/ornelladileone/\">https://www.instagram.com/ornelladileone/</a>. Se preferir o formato tradicional, de vir até o consultório, pode agendar diretamente no <a href=\"http://linktr.ee/ornella.dileone\">linktr.ee/ornella.dileone</a> que está na minha Bio.</strong></p>\n"
+}
