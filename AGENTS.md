@@ -27,10 +27,13 @@ Requer Node.js 22 ou superior; o projeto não precisa de `npm install`.
 
 - Repositório: `luizelias/dileonepediatria`.
 - Em **Settings → Pages → Build and deployment**, a configuração desejada é **Source: Deploy from a branch**, **Branch: main**, **Folder: /docs**, seguida de **Save**.
-- URL padrão: https://luizelias.github.io/dileonepediatria/.
-- `url` em `site.config.json` define os endereços canônicos, metadados, sitemap, robots.txt e a base dos links e recursos da página 404. Preserve o suporte ao subdiretório `/dileonepediatria/`.
+- URL de produção: https://dileonepediatria.com.br/. O domínio foi escolhido pelo usuário para substituir a hospedagem WordPress anterior.
+- `site.config.json` deve usar `https://dileonepediatria.com.br` e `docs/CNAME` deve conter apenas `dileonepediatria.com.br`. Preserve essa configuração nos próximos builds e commits.
+- `url` em `site.config.json` define os endereços canônicos, metadados, sitemap, robots.txt e a base dos links e recursos da página 404. No domínio próprio, o site é servido na raiz, sem `/dileonepediatria/`. Preserve os links relativos; o gerador também suporta subdiretórios para outros ambientes.
 - Mantenha `docs/.nojekyll`, `docs/index.html`, `docs/404.html` e todos os recursos necessários dentro da pasta publicada.
-- Para migrar para um domínio próprio, atualize `site.config.json`, regenere `docs/` e configure o domínio no Pages e no DNS conforme a solicitação do usuário.
+- A associação em **Settings → Pages → Custom domain** e o apontamento DNS são etapas separadas. O arquivo `docs/CNAME` não substitui a configuração do Pages. Ao preparar esta migração, o DNS ainda estava na HostGator, sob responsabilidade do administrador da hospedagem anterior; verifique o estado atual antes de afirmar que o domínio já migrou.
+- Para o DNS, use os quatro registros A oficiais do GitHub Pages no domínio principal e `www` como CNAME de `luizelias.github.io`, sem o nome do repositório. Preserve os servidores DNS e os registros de e-mail, incluindo MX, `mail`, SPF, DKIM e DMARC.
+- Após o DNS apontar para o GitHub, confira o certificado e **Enforce HTTPS**, além do domínio principal e `www`. Não remova a hospedagem anterior antes da validação e da confirmação sobre o serviço de e-mail.
 - Se existir `docs/CNAME`, preserve-o. O GitHub pode criá-lo ao configurar um domínio próprio; sincronize mudanças remotas antes de gerar e publicar novamente. O gerador preserva esse arquivo durante a limpeza de `docs/`.
 - Um push concluído não comprova que a publicação está no ar nem que as configurações do Pages foram alteradas. Informe somente o que foi efetivamente verificado.
 

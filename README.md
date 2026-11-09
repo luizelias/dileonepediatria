@@ -28,13 +28,17 @@ npm run build # Gera somente os arquivos para publicação em docs/
 
 O Pages publica os arquivos prontos de `docs/`, incluindo HTML, imagens, fontes, CSS, JavaScript e `.nojekyll`. O repositório não possui workflow próprio de Actions. O GitHub pode mostrar a publicação interna do Pages na aba Actions, mesmo usando **Deploy from a branch**.
 
-O endereço padrão é https://luizelias.github.io/dileonepediatria/. A propriedade `url` de `site.config.json` define os endereços dos metadados, sitemap e recursos da página 404; os demais links usam caminhos relativos.
+O endereço de produção é https://dileonepediatria.com.br/. A propriedade `url` de `site.config.json` define os endereços dos metadados, sitemap e recursos da página 404; os demais links usam caminhos relativos. O site é servido na raiz desse domínio, sem `/dileonepediatria/`.
 
 Após cada alteração em conteúdo, estilos ou modelos, execute `npm test` e inclua também as mudanças geradas em `docs/` no mesmo commit. Cada envio à `main` com mudanças nessa pasta atualiza o site. Edite os arquivos de origem: as páginas e os recursos de `docs/` são substituídos a cada geração.
 
 Fonte da configuração: [documentação oficial de publicação a partir de uma branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-Para usar `dileonepediatria.com.br`, altere `url` em `site.config.json` para `https://dileonepediatria.com.br`, execute `npm test` e envie a atualização de `docs/`. Configure também **Settings → Pages → Custom domain** e o DNS do domínio. Se o GitHub criar `docs/CNAME`, sincronize esse arquivo com a cópia local antes da próxima geração; o gerador preserva um `docs/CNAME` existente. Esta implementação não altera DNS nem publica automaticamente a partir da máquina local. Não remova a hospedagem antiga antes de conferir as páginas publicadas e o domínio.
+O projeto já usa `https://dileonepediatria.com.br` em `site.config.json`, e `docs/CNAME` contém `dileonepediatria.com.br`. Mantenha esse arquivo versionado; o gerador o preserva durante a limpeza de `docs/`. A configuração de **Settings → Pages → Custom domain** deve usar o mesmo domínio.
+
+O apontamento DNS é uma etapa separada, a ser executada pelo responsável pela zona na HostGator. No domínio principal (`@`), substitua o antigo registro A pelos quatro registros A do GitHub Pages: `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`. Configure `www` como CNAME de `luizelias.github.io`, sem protocolo nem nome do repositório. Preserve os servidores DNS e todos os registros de e-mail. Se houver registros AAAA antigos para o site, remova apenas os conflitantes ou atualize-os conforme a [documentação oficial de domínio personalizado](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+
+Depois da propagação, confira a emissão do certificado e **Enforce HTTPS** no Pages, as páginas publicadas, os recursos, `www` e o e-mail. Esta implementação não altera DNS. Não remova a hospedagem antiga antes dessa validação; o serviço de e-mail pode continuar dependendo dela. O endereço `luizelias.github.io/dileonepediatria/` pode redirecionar para o domínio próprio assim que ele for associado no GitHub, mesmo antes de concluir a troca de DNS.
 
 ## Editar conteúdo
 
