@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const out = path.join(root, 'dist');
+const out = path.join(root, 'docs');
 const readJSON = async (file) => JSON.parse(await readFile(path.join(root, file), 'utf8'));
 const config = await readJSON('site.config.json');
 const site = await readJSON('content/site.json');
@@ -93,9 +93,9 @@ function educationSection(route) {
 function postCard(post, route, details = false) {
   const target = link(route, `${post.slug}/`);
   return `<article class="post-card${details ? ' detailed' : ''}"><a class="post-image" href="${target}" aria-label="${esc(post.title)}">${image(post.image, post.imageAlt || post.title, route)}</a><div class="post-card-body">
-  ${details ? `<div class="post-categories">${categoryLinks(post, route)}</div>` : ''}
+${details ? `<div class="post-categories">${categoryLinks(post, route)}</div>` : ''}
   <h3><a href="${target}">${esc(post.title)}</a></h3>
-  ${details ? `<p class="excerpt">${esc(post.excerpt.split(/\s+/).slice(0, 20).join(' ').replace(/[….,:;]$/, '') + '…')}</p><div class="post-byline">Ornella Di Leone <time datetime="${post.date.slice(0, 10)}">${date(post.date)}</time></div>` : ''}
+${details ? `<p class="excerpt">${esc(post.excerpt.split(/\s+/).slice(0, 20).join(' ').replace(/[….,:;]$/, '') + '…')}</p><div class="post-byline">Ornella Di Leone <time datetime="${post.date.slice(0, 10)}">${date(post.date)}</time></div>` : ''}
   </div></article>`;
 }
 
@@ -140,9 +140,15 @@ function article(post) {
 
 export async function build() {
   // Only the known generated directory is replaced; source content is never removed.
-  if (path.dirname(out) !== root || path.basename(out) !== 'dist') throw new Error('Invalid output directory');
+  if (path.dirname(out) !== root || path.basename(out) !== 'docs') throw new Error('Invalid output directory');
+  // Pages may create this file when a custom domain is configured in the repository settings.
+  const cname = await readFile(path.join(out, 'CNAME'), 'utf8').catch(error => {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  });
   await rm(out, { recursive: true, force: true });
   await mkdir(out, { recursive: true });
+  if (cname !== null) await writeFile(path.join(out, 'CNAME'), cname);
   await cp(path.join(root, 'assets'), path.join(out, 'assets'), { recursive: true });
   const routes = [];
   async function page(route, html, index = true) {

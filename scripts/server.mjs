@@ -6,7 +6,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const output = path.join(root, 'dist');
+const output = path.join(root, 'docs');
 const port = Number(process.env.PORT || 4173);
 const base = (process.env.BASE_PATH || '').replace(/\/$/, '');
 function rebuild() {

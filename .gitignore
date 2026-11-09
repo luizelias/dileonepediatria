@@ -1,3 +1,4 @@
+# Saída antiga; docs/ deve ser incluída nos commits para publicar no Pages.
 dist/
 .migration/
 node_modules/

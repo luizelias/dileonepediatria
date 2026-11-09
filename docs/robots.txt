@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luizelias.github.io/dileonepediatria/sitemap.xml

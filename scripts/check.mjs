@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const out = path.join(root, 'dist');
+const out = path.join(root, 'docs');
 const config = JSON.parse(await readFile(path.join(root, 'site.config.json'), 'utf8'));
 const base = new URL(process.env.SITE_URL || config.url).pathname.replace(/\/$/, '');
 const errors = [];
