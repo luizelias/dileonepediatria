@@ -4,6 +4,7 @@
 /* Warm colors echo the coral and peach of the original lion logo. */
 :root{
   --accent:#b04d42;--accent-hover:#913d35;--accent-soft:#efc3b3;
+  --whatsapp:#25d366;--whatsapp-hover:#20bd5a;--whatsapp-ink:#073b2b;
   --ink:#53445e;--text:#685a64;--heading:var(--ink);
   --paper:#fffcf8;--surface:#fffaf5;--surface-peach:#f8eee7;--hero:#f8f0e6;
   --surface-lilac:#f2ebf8;--lilac-line:#dfd2e9;--lilac-ink:#79568b;
@@ -51,8 +52,8 @@ h3{font-size:22px;line-height:1.55}
 .menu-toggle span{display:block;width:24px;height:2px;margin:5px 0;background:currentColor;transition:transform .2s,opacity .2s}
 .on-dark .menu-toggle{color:#fff}
 
-.appointment{display:inline-flex;width:max-content;max-width:100%;min-height:64px;align-items:center;justify-content:space-between;gap:28px;border-radius:60px;background:var(--accent);color:white;font-size:18px;font-weight:700;line-height:1.4;padding:10px 10px 10px 36px;transition:transform .2s,box-shadow .2s,background .2s;text-align:left}
-.appointment:hover{transform:translateY(-3px);box-shadow:0 8px 20px #00000012;background:var(--accent-hover)}
+.appointment{display:inline-flex;width:max-content;max-width:100%;min-height:64px;align-items:center;justify-content:space-between;gap:28px;border-radius:60px;background:var(--whatsapp);color:var(--whatsapp-ink);font-size:18px;font-weight:700;line-height:1.4;padding:10px 10px 10px 36px;transition:transform .2s,box-shadow .2s,background .2s;text-align:left}
+.appointment:hover{transform:translateY(-3px);box-shadow:0 8px 20px #00000012;background:var(--whatsapp-hover)}
 .appointment-icon{width:44px;height:44px;display:grid;place-items:center;flex:none;border-radius:50%;background:#ffffff26}
 .appointment-icon svg{width:20px;height:20px}
 .appointments{display:flex;align-items:flex-start;flex-direction:column;gap:10px;margin-top:26px}
