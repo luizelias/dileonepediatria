@@ -1,14 +1,15 @@
 @font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:300 700;font-display:swap;src:url("fonts/plus-jakarta-sans-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:300 700;font-display:swap;src:url("fonts/plus-jakarta-sans-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
 
-/* Warm colors echo the coral and peach of the original lion logo. */
+/* Palette roles: cream and peach surfaces; coral from the lion logo for
+   links and icons; warm plum for the hero and testimonials. Green belongs
+   exclusively to WhatsApp. Reuse these roles instead of coloring by order. */
 :root{
   --accent:#b04d42;--accent-hover:#913d35;--accent-soft:#efc3b3;
   --whatsapp:#49c358;--whatsapp-hover:#3aaf49;--whatsapp-ink:#fff;
-  --ink:#53445e;--text:#685a64;--heading:var(--ink);
-  --paper:#fffcf8;--surface:#fffaf5;--surface-peach:#f8eee7;--hero:#f8f0e6;
-  --surface-lilac:#f2ebf8;--lilac-line:#dfd2e9;--lilac-ink:#79568b;
-  --butter:#f9e5a8;--surface-blue:#eaf0fa;
+  --ink:#514650;--text:#665b62;--heading:var(--ink);
+  --paper:#fffcf8;--surface:var(--paper);--surface-peach:#f8eee7;--hero:var(--surface-peach);
+  --surface-plum:#f2ebf1;--plum-line:#e3d7e1;--plum-ink:#765d78;
   --line:#e7d9d1;--footer:#f2e2d8;
   --service-icon-filter:brightness(0) saturate(100%) invert(36%) sepia(22%) saturate(1642%) hue-rotate(326deg) brightness(90%) contrast(90%);
   --page-width:1245px;--section-space:6vw;--font:"Plus Jakarta Sans",Arial,sans-serif;
