@@ -46,11 +46,11 @@ function header(route, dark = false) {
 
 function footer(route) {
   return `<footer class="site-footer"><div class="container">
-    <h2>Vamos Cuidar Juntos?</h2>
-    <p class="footer-message">Sua decisão de estar aqui hoje já é o primeiro passo para um futuro mais saudável.</p>
+    <h2>${esc(site.footer.title)}</h2>
+    <p class="footer-message">${esc(site.footer.message)}</p>
     ${appointment(site.appointments[0], 'Agende sua Consulta')}
-    <div class="footer-details"><p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Consultório no coração de Florianópolis</p>
-    <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Horários flexíveis, pensados para famílias reais</p></div>
+    <div class="footer-details"><p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>${esc(site.footer.location)}</p>
+    <p>${icon}${esc(site.footer.booking)}</p></div>
     ${image(site.footerLogo, 'Logomarca — Dra. Ornella Di Leone', route, 'footer-logo')}
     <p class="credits">Created by <a href="https://cumaru.me/" target="_blank" rel="noopener noreferrer">Cumaru Creative Studio</a></p>
   </div></footer><a class="back-to-top" href="#top" aria-label="Voltar ao topo">↑</a>`;
@@ -103,12 +103,12 @@ function home() {
   return document({ body: `<section class="hero" style="background-image:url('${site.heroImage}')"><div class="container"><div class="hero-copy">
     <h1>${esc(site.title)}</h1><p class="hero-intro">${esc(site.intro)}</p>${checks(site.heroChecks)}${appointments()}
   </div><div class="hero-mobile" aria-hidden="true" style="background-image:url('${site.heroImage}')"></div></div></section>
-  <section class="section philosophy"><div class="container narrow"><h2>${esc(site.philosophyTitle)}</h2>${site.philosophy}${appointments()}</div></section>
+  <section class="section philosophy"><div class="container narrow"><h2>${esc(site.philosophyTitle)}</h2>${site.philosophy}</div></section>
   <section class="section tint benefits"><div class="container split">${image(site.benefitsImage, 'Dra. Ornella Di Leone com seu estetoscópio', '', 'portrait')}<div class="split-text"><h2>${esc(site.benefitsTitle)}</h2>${checks(site.benefits)}${site.benefitsEnd}${appointments()}</div></div></section>
-  <section class="section services" id="servicos"><div class="container"><div class="narrow"><h2>${esc(site.servicesTitle)}</h2>${site.servicesIntro}</div><div class="service-grid">${site.services.map(service => `<article class="service-card">${image(service.icon, '', '', 'service-icon')}<h3>${esc(service.title)}</h3>${service.body}</article>`).join('')}</div></div></section>
+  <section class="section services" id="servicos"><div class="container services-layout"><div class="services-intro"><h2>${esc(site.servicesTitle)}</h2>${site.servicesIntro}</div><div class="service-grid">${site.services.map(service => `<article class="service-card"><span class="service-symbol" aria-hidden="true">${image(service.icon, '', '', 'service-icon')}</span><h3>${esc(service.title)}</h3>${service.body}</article>`).join('')}</div></div></section>
   ${aboutSection('')}
   <section class="section testimonials" aria-label="Depoimentos"><h2>Depoimentos</h2><div class="testimonial-carousel" aria-roledescription="carrossel"><div class="testimonial-track" tabindex="0" aria-label="Depoimentos das famílias">${site.testimonials.map((item, index) => `<figure class="testimonial" role="group" aria-label="${index + 1} de ${site.testimonials.length}"><blockquote><span class="quote-mark" aria-hidden="true">“</span><p>${item.body}</p></blockquote><figcaption><strong>${esc(item.name)}</strong><span>${esc(item.role)}</span></figcaption></figure>`).join('')}</div>
-    <div class="carousel-controls"><button type="button" data-slide="previous" aria-label="Depoimento anterior">←</button><span class="carousel-position" aria-live="polite">1 / ${site.testimonials.length}</span><button type="button" data-slide="next" aria-label="Próximo depoimento">→</button></div></div>${appointments(true)}</section>
+    <div class="carousel-controls"><button type="button" data-slide="previous" aria-label="Depoimento anterior">←</button><span class="carousel-position" aria-live="polite">1 / ${site.testimonials.length}</span><button type="button" data-slide="next" aria-label="Próximo depoimento">→</button></div></div></section>
   ${educationSection('')}
   <section class="section home-blog" id="blog"><div class="container"><div class="section-heading"><h2>Dicas e Blog</h2><a class="view-all" href="blog/">Ver todos <span aria-hidden="true">→</span></a></div><div class="post-grid">${posts.map(p => postCard(p, '')).join('')}</div></div></section>` });
 }

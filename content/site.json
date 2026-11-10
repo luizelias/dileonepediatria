@@ -1,6 +1,12 @@
 {
   "title": "Calma, mãe!",
   "intro": "Estou aqui para te ajudar neste universo da maternidade, contribuindo para que ela seja mais leve.",
+  "footer": {
+    "title": "Dra. Ornella Di Leone",
+    "message": "Pediatria em Florianópolis",
+    "location": "Consultas na Clínica Trompowsky",
+    "booking": "Agendamento pelo WhatsApp da clínica"
+  },
   "heroChecks": [
     "Acompanhamento para um <strong>crescimento saudável,</strong> com foco importante na <strong>prevenção</strong>",
     "Pediatria baseada em <strong>evidência científica</strong>",
